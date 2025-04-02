@@ -30,7 +30,7 @@ col_palette <- c("Liberal" = "#D71920",
 
 # text
 
-title_text <- "What's on the ballot, Canada?"
+title_text <- "What is on the ballot, Canada?"
 
 caption <- "Source: Abacus Data • Graphic: Sejal Davla, PhD"
 
