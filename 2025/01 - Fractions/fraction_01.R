@@ -19,7 +19,7 @@ waffle_data <- expand.grid(x = rep(1:10), y = rep(1:10), topic = unique(df$topic
 
 # fonts
 
-font_add_google("Outfit","Outfit")
+font_add_google("Outfit","outfit")
 showtext_auto()
 
 # colors
@@ -61,6 +61,7 @@ fraction_01 <- waffle_data |>
                                       color = "gray80",
                                       lineheight = 0.75,
                                       hjust = 0.5,
-                                      margin = margin(0.5,0,0.5,0, "cm")))
+                                      margin = margin(0.5,0,0.5,0, "cm")),
+        plot.margin = unit(c(0,0.5,0,0.5), "cm"))
 
-ggsave("fraction_01.png", width = 4, height = 4, dpi = 300, bg = "black")
+ggsave("fraction_01.png", width = 4.5, height = 4, dpi = 300, bg = "black")
