@@ -6,6 +6,8 @@ library(circlize)
 
 # data wrangling
 
+# data from https://www.tandfonline.com/doi/full/10.1080/09692290.2024.2365757?scroll=top&needAccess=true#abstract
+
 df <- read_csv(here("data_rikap.csv")) |>
   pivot_longer(everything(),
                names_to = "company",
